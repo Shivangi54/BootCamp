@@ -1,0 +1,67 @@
+
+
+SQL> Create table Customer (CustomerID Number Primary Key, CustomerName Varchar(
+30), CustomerEmail Varchar(64), CustomerPassword Varchar(16), CustomerPhone Numb
+er(10), CustomerAddress Varchar(128), CustomerCity Varchar(32), CustomerZip Varc
+har(6), CustomerCountry Varchar(64));
+
+Table created.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> Create table Category (CategoryID Number Primary Key, CategoryName Varchar(30) Unique);
+
+Table created.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> create table Orders (OrderID Number Primary Key, SubTotal Float, Total Float, OrderStatus Varchar(20), PaymentMethod Varchar
+(20), OrderDate Date);
+
+Table created.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> create table admin (AdminID Number Primary Key, AdminEmail Varchar(64), AdminName Varchar(30), AdminPassword Varchar(16));
+
+Table created.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> create table book(BookID Number Primary Key, BookTitle Varchar(128), BookAuthor Varchar(64), BookDesc Varchar(2000), BookISB
+N Varchar(15), BookPrice Float, BookPublishDate Date, BookQuantity Number);
+
+Table created.
+
+SQL> commit;
+
+Commit complete.
+
+
+SQL> Create table  Image(ImageID Number Primary Key, ImageUrl Varchar(200));
+
+Table created.
+
+SQL> commit;
+
+Commit complete.
+
+
+SQL> Create table Review(ReviewID Number Primary Key, Rating Number,Headline Varchar(30),WriteComment Varchar(200),ReviewDate Dat
+e);
+
+Table created.
+
+SQL> commit;
+
+Commit complete.
+
+SQL>
